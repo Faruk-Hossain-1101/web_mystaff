@@ -49,7 +49,7 @@
         const inputCounts = labels.map(hour => dataFromBackend[hour] || 0);
         
         const efficiencyData = inputCounts.map(count => {
-            const efficiency = (count / (250 * 60)) * 100; // Assuming 250 chars/min
+            const efficiency = (count / (200 * 60)) * 100; // Assuming 200 chars/min
             return Math.min(efficiency, 100); // Cap efficiency at 100%
         });
 
